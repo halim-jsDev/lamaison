@@ -1,0 +1,49 @@
+.container {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: rgb(115, 114, 114);
+}
+.title {
+  color: rgb(241, 241, 94);
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 5px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.title span{
+    font-size: 15px;
+    
+}
+.desc {
+  font-size: 20px;
+  color: rgba(25, 25, 24, 0.763);
+  width: 70%;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .title {
+    text-align: center;
+  }
+
+  .desc {
+    width: 90%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  
+}

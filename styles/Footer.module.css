@@ -1,0 +1,55 @@
+.container {
+  height: calc(70vh - 100px);
+  display: flex;
+  background-color: rgb(10, 9, 9);
+}
+.item {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+.item > img {
+  height: 100%;
+}
+.item:last-child {
+  flex: 2;
+  padding-top: 100px;
+}
+.card {
+  flex: 1;
+  padding: 0 20px;
+}
+.title {
+  font-size: 18px;
+  color: rgb(198, 183, 11);
+}
+.text {
+  color: lightgrey;
+}
+.motto {
+  color: rgb(118, 117, 117);
+  font-size: 28px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 35px;
+  }
+  .item:first-child {
+    display: none;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
